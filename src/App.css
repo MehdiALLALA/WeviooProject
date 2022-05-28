@@ -1,3 +1,4 @@
-.App {
-  text-align: center;
+.custom-chip {
+  background: var(--primary-color);
+  color: var(--primary-color-text);
 }
