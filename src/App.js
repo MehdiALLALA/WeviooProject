@@ -4,11 +4,23 @@ import 'primereact/resources/primereact.css';
 import 'primeflex/primeflex.css';
 import './App.css'
 import Post from './components/Post';
+import PostDetails from './components/PostDetails';
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Post/>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Post />} />
+        <Route path="/PostDetails" element={<PostDetails />} />
+      </Routes>
+    </Router>
     </div>
   );
 }
